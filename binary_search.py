@@ -9,8 +9,8 @@ def binary_search_recursive(array, item, low=None, high=None):
 		elif array[mid] < item:
 			return binary_search_recursive(array, item, low=mid, high=high)
 		else:
-			return 'Item found at index {}'.format(mid)
-	return 'Item not found'
+			return mid
+	return -1
 
 
 def binary_search_iterative(array, item, low=None, high=None):
@@ -26,17 +26,22 @@ def binary_search_iterative(array, item, low=None, high=None):
 			low=mid
 			high=high
 		else:
-			return 'Item found at index {}'.format(mid)
-		
+			return mid
 		mid = (low+high)/2
 
-	return 'Item not found.'
+	return -1 
 
+if __name__ == '__main__':
+    a = [-2, 4, 5, 5,6, 7]
+    print binary_search_recursive(a, 6)	
+    print binary_search_iterative(a, 6)	
 
-a = [-2, 4, 5, 5,6, 7]
-print binary_search_recursive(a, 6)	
-print binary_search_iterative(a, 6)	
+    b = [-2, 4, 5,6, 7]
+    print binary_search_recursive(b, 6)	
+    print binary_search_iterative(b, 6)	
+    print binary_search_recursive(b, 7)
+    print binary_search_iterative(b, 7)	
+    print binary_search_iterative(b, 77)	
 
-b = [-2, 4, 5,6, 7]
-print binary_search_recursive(b, 6)	
-print binary_search_iterative(b, 6)	
+    c = [-2, 4,6,12,17,99,100,100,109]
+    print binary_search_recursive(c, 109)

@@ -93,14 +93,13 @@ if __name__ == '__main__':
 	print insertion_sort(b)
 	print insertion_sort(c)
 	print insertion_sort(d)
-	print mergesort(e)
+	print insertion_sort(e)
 
 	print bubble_sort(a)
 	print bubble_sort(b)
 	print bubble_sort(c)
 	print bubble_sort(d)
-	print mergesort(e)
-
+	print insertion_sort(e)
 
 
 

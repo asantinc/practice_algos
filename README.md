@@ -1,2 +1,1 @@
-# sorting_basics
-Sorting algorithms
+Exercises for fun and practice.
