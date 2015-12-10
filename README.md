@@ -1,1 +1,2 @@
-Exercises for fun and practice.
+# leet_code
+My solutions to leet code questions
