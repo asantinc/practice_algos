@@ -1,2 +1,1 @@
-# leet_code
-My solutions to leet code questions
+Interview practice questions
